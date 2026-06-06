@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event portal</title>
+    <style>
+        
+        #welcomeBanner{
+            background-color: blue;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .highlight{
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .gallery{
+            border: 2px solid black;
+            /* border-collapse: collapse; */
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .gallery th,
+        .gallery td{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .gallery img{
+            width: 250px;
+            height: 180px;
+        }
+
+        form{
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 20px;
+            width: 350px;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+
+        input,
+        select,
+        textarea{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        button{
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+        }
+
+        button:hover{
+            background-color: darkblue;
+            
+        }
+
+        output{
+            color: green;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="welcomeBanner" >
+        Welcome to local community portal
+        <span style="color: red; font-weight: bold;">
+            Special offer!!!
+        </span>
+        
+    </div>
+    <section id="home">
+        <h4 class="highlight">Home page</h4>
+        <p>This is the home page.</p>
+    </section>
+    <section id="events">
+        <h4 class="highlight">Upcoming Events</h4>
+        <p>Here are some events you might like!</p>
+    </section>
+    <section id="contact">
+        <h4 class="highlight">Contact Us</h4>
+        <p>You can reach us at info@localcommunityevents.com</p>
+    </section>
+    <main>
+        <h1>Local Community Event portal</h1>
+        <p>Welcome to the Local Community Event portal! Here you can find information about upcoming events in your area, connect with other community members, and stay updated on local news and activities. Whether you're looking for family-friendly events, cultural festivals, or volunteer opportunities, our portal has something for everyone. Join us in celebrating our vibrant community and making meaningful connections!</p>
+    </main>
+    <table class = "gallery">
+        <tr>
+            <th>Event Name</th>
+            <th>Event Images</th>
+            <th>Event date</tr>
+        </tr>
+        <tr> 
+            <td>GLory</td>
+            <td><img src="https://cdn.hswstatic.com/gif/community-events-ideas.jpg" title="food event" alt="img2.png"></td>
+            <td>july 17th</td>
+        </tr>
+        <tr>
+            <td>Beauty</td>
+             <td><img src="https://media.istockphoto.com/id/1785808259/photo/networking-opportunities.jpg?s=612x612&w=0&k=20&c=pgrB3Py2KJaOmohj7wRYmIg0frjgSC0nXBBfbDb-HH4=" title="Community Evevt" alt="img1.png"></td>
+            <td>jan 20th</td>
+        </tr>
+    </table>
+    <br>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter you name"required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your email" required><br>
+
+        <label for="date">Event Date:</label>
+        <input type="date" placeholder="Enter event date" required><br>
+
+        <label>Event type</label>
+        <select required>
+        <option value="">Select Option</option>
+        <option>Food</option>
+        <option>Music</option>
+        </select><br>
+        <textarea placeholder="Enter message" required></textarea><br>
+
+        <button type="submit">Register</button><br><br>
+
+        <output >"Thanks for registration</output>
+    </form>
+    <footer>
+        <p>@2026 All rights reserved</p>
+    </footer>
+</body>
+</html>
